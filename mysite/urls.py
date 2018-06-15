@@ -17,8 +17,14 @@ Including another URLconf
 from django.conf.urls import include,url
 from django.contrib import admin
 from django.urls import path
+from .views import redirect_root
+from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # url(r'^index/', views.index, name='home'),
+    url(r'^$', redirect_root),
     url(r'', include('blog.urls')),
+    url(r'', include('projects.urls')),
+    url(r'', include('index.urls')),
 ]
