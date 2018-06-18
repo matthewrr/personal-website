@@ -10,7 +10,7 @@
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		
-		<meta name="author" content="Pascal van Gemert" />	
+		<meta name="author" content="Matthew R. Rivera" />	
 		<!--<meta name="description" content="I'm Matthew R. Rivera, a software engineer and Python enthusiast." />-->
 		<!--<meta name="keywords" content="Matthew Rivera, Python programmer, Software Engineer, Backend Developer, Startup, Interactive CV, Resume, CV, Django, Algorithms" />-->
 		<meta name="robots" content="index, follow" />
@@ -47,7 +47,7 @@
 	</head>
 	
 	<body data-spy="scroll" data-target="#navbar-example">	 
-			
+		<div class="opl"><a href="http://onepagelove.com/pascal-van-gemert" target="_blank">pascalvangemert.nl featured on One Page Love</a></div>	
 		<div id="top" class="jumbotron" data-src="/view/images/metro_animation.gif" data-position="center right">
 			<div class="container">
 				<h1>Matthew R. Rivera</h1>
@@ -57,7 +57,7 @@
 			<div class="overlay"></div>
 			
 			<a href="#profile" class="scroll-down">	
-				<span class="glyphicon glyphicon-chevron-down"></span>
+				<img class="glyphicon" src="{% static "index/img/chevron-down.svg" %}" alt="Map Marker"/>
 			</a>
 		</div>
 		
@@ -98,7 +98,8 @@
 			I am an allround web developer. I am a senior programmer with good knowledge of front-end techniques. I love structure and order and I also stand for quality. I love spending time on fixing little details and optimizing web apps. Also I like working in a team, you'll learn faster and much more. As the saying goes: 'two heads are better than one'.		</p>
 	</div>
 	<div class="col-md-4 text-center">
-		<img src="/view/images/pascal_van_gemert.png" alt="Pascal van Gemert" width="246" height="246" />
+		<img src="{% static "index/img/headshot.jpeg" %}" alt="Matthew R. Rivera" width="246" height="246"/>
+		<!--<img src="/view/images/pascal_van_gemert.png" alt="Pascal van Gemert" width="246" height="246" />-->
 	</div>
 	<div class="col-md-4">
 		<h3>Details</h3>
@@ -110,8 +111,6 @@
 			<strong>Location:</strong><br />
 			San Francisco, California		</p>
 		
-		<a href="https://twitter.com/pascalvgemert" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false">Follow @pascalvgemert</a>
-		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 	</div>
 </div>
 
@@ -131,7 +130,7 @@
 	<strong>Looking for an awesome new challenge somewhere in the neighborhood of Den Bosch or Amsterdam as a Creative PHP Web Developer. </strong>
 </div>-->
 
-<h3>Educations</h3>
+<h3>Education</h3>
 
 
 <div class="experiences">
@@ -151,7 +150,7 @@
 					The education was mainly Java-based programming, but I also learned about SQL, PHP, MVC, UML and more. During my time in college, I specialized in multimedia. Here I learned about gaming -the importance of OOP-, web- and user experience and design.				</span>
 				<span class="experience-details">
 					<span class="location">
-						<img src="{% static "index/svg/location.svg" %}" alt="Map Marker"/>
+						<img src="{% static "index/img/location.svg" %}" alt="Map Marker"/>
 						Palo Alto, CA					</span>
 				</span>
 			</p>
@@ -173,7 +172,7 @@
 					The education was mainly Java-based programming, but I also learned about SQL, PHP, MVC, UML and more. During my time in college, I specialized in multimedia. Here I learned about gaming -the importance of OOP-, web- and user experience and design.				</span>
 				<span class="experience-details">
 					<span class="location">
-						<img src="{% static "index/svg/location.svg" %}" alt="Map Marker"/>
+						<img src="{% static "index/img/location.svg" %}" alt="Map Marker"/>
 						Spokane, WA					</span>
 				</span>
 			</p>
@@ -195,7 +194,7 @@
 					I graduated highschool, where I enjoyed doing science, math, biology and arts. I realized in my third year of school that I wanted to do something with websites, and so I started making small flash/actionscript applications.				</span>
 				<span class="experience-details">
 					<span class="location">
-						<img src="{% static "index/svg/location.svg" %}" alt="Map Marker"/>
+						<img src="{% static "index/img/location.svg" %}" alt="Map Marker"/>
 						Spokane, WA					</span>
 				</span>
 			</p>
@@ -229,7 +228,7 @@
 					Working as a Senior Devloper on a large european based webshop for digital games and gifrcards. The application is Laravel based and as a team we are working in a fully scrum way. . 				</span>
 				<span class="experience-details">
 					<span class="location">
-						<img src="{% static "index/svg/location.svg" %}" alt="Map Marker"/>
+						<img src="{% static "index/img/location.svg" %}" alt="Map Marker"/>
 						Spokane, WA					</span>
 					
 										
@@ -260,7 +259,7 @@
 					As a senior at The Secret Lab I work on projects like Kaartjes.nl, Clay.com and more. Using frameworks and technologies such as Laravel, Wordpress, Drupal 8 and ElasticSearch. I also introduced working with Git Flow and supporting my colleagues to write nice readable and reusable code. 				</span>
 				<span class="experience-details">
 					<span class="location">
-						<img src="{% static "index/svg/location.svg" %}" alt="Map Marker"/>
+						<img src="{% static "index/img/location.svg" %}" alt="Map Marker"/>
 						San Francisco, CA					</span>
 					
 										
@@ -291,7 +290,7 @@
 					Caviar Digital is a digital agency based in Amsterdam. I worked here as a creative developer on a big project for the new Samsung Galaxy S6 / S6 edge and created a configurable CMS based on the Laravel Framework. Due to economically reasons it was a short but good experience.				</span>
 				<span class="experience-details">
 					<span class="location">
-						<img src="{% static "index/svg/location.svg" %}" alt="Map Marker"/>
+						<img src="{% static "index/img/location.svg" %}" alt="Map Marker"/>
 						Amsterdam					</span>
 					
 										
@@ -322,7 +321,7 @@
 					Whoopaa is a startup that began as a social network where users were able to separate their business- and personal social life. As this idea didn't exactly take off the way we expected it to, we changed the idea. We began a job matching platform, where Whoopaa became the place for job seekers to make an interactive CV enriched with certified tests. The place where companies can create job openings and efficiently find the right candidates needed a name as well, and was called HRMatches. I developed an own framework, which I improved in user experience and speed after the big idea change. I also developed the real time match algorithm as well as a lot of other helpful algorithms.				</span>
 				<span class="experience-details">
 					<span class="location">
-						<img src="{% static "index/svg/location.svg" %}" alt="Map Marker"/>
+						<img src="{% static "index/img/location.svg" %}" alt="Map Marker"/>
 						's-Hertogenbosch					</span>
 					
 										
@@ -353,7 +352,7 @@
 					Right after I graduated, I started working for C2K: a full service internet agency. I developed a homemade CMS, CRM and e-mail marketing system. The CMS was used for a dozens of clients, as well as the e-mail marketing system. I also did a lot of custom made web sites/applications. Later on I also developed Layars like: Conquar (a digital adaption of the board game of Risk) and Gowalla (based on Gowalla's API). C2K no longer exists.				</span>
 				<span class="experience-details">
 					<span class="location">
-						<img src="{% static "index/svg/location.svg" %}" alt="Map Marker"/>
+						<img src="{% static "index/img/location.svg" %}" alt="Map Marker"/>
 						Eindhoven / 's-Hertogenbosch					</span>
 					
 										
@@ -377,7 +376,7 @@
 					My second internship and the place I eventually graduated, was at Davinci. I investigated new web-technologies they could possibly use to improve the front-end of their java-based CRM system. I compared technologies such as Adobe Flex, Silverlight, Ruby on Rails together, to find out which could work best for the company. Based on the results of my research, the company eventually decided to use the ZK Framework.				</span>
 				<span class="experience-details">
 					<span class="location">
-						<img src="{% static "index/svg/location.svg" %}" alt="Map Marker"/>
+						<img src="{% static "index/img/location.svg" %}" alt="Map Marker"/>
 						Amsterdam					</span>
 					
 										
@@ -408,7 +407,7 @@
 					At sanitairwinkel.nl, I improved/expanded the current webapplication and re-factored the code. I also created a brand new back-end system and improved the front-end by giving it a new look and feel. I also improved the website's SEO. 				</span>
 				<span class="experience-details">
 					<span class="location">
-						<img src="{% static "index/svg/location.svg" %}" alt="Map Marker"/>
+						<img src="{% static "index/img/location.svg" %}" alt="Map Marker"/>
 						Rosmalen					</span>
 					
 										
@@ -439,7 +438,7 @@
 					After my internship ended I was asked to stay as part-time employee. Goomla became partner of the year of Bol.com. In October 2007 Goomla was sold to Daisycon.				</span>
 				<span class="experience-details">
 					<span class="location">
-						<img src="{% static "index/svg/location.svg" %}" alt="Map Marker"/>
+						<img src="{% static "index/img/location.svg" %}" alt="Map Marker"/>
 						Eindhoven					</span>
 					
 										
@@ -463,7 +462,7 @@
 					I did my first internship at a company named Goomla. There I learned to apply my knowledge of PHP. Goomla was a shopping/comparison-site, with more than 100 affiliates including bol.com, wehkamp, neckermann, to name a few.				</span>
 				<span class="experience-details">
 					<span class="location">
-						<img src="{% static "index/svg/location.svg" %}" alt="Map Marker"/>
+						<img src="{% static "index/img/location.svg" %}" alt="Map Marker"/>
 						Eindhoven					</span>
 					
 										
@@ -498,110 +497,110 @@
 			<li>
 				<span class="ability-title">Bootstrap Framework</span>
 				<span class="ability-score">
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
 				</span>
 			</li>
 			
 			<li>
 				<span class="ability-title">CSS(3)</span>
 				<span class="ability-score">
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>			
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>			
 				</span>
 			</li>
 			
 			<li>
 				<span class="ability-title">HTML(5)</span>
 				<span class="ability-score">
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
 				</span>
 			</li>
 				
 			<li>
 				<span class="ability-title">JSON</span>
 				<span class="ability-score">
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>		
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>		
 				</span>
 			</li>
 			
 			<li>
 				<span class="ability-title">MySQL</span>
 				<span class="ability-score">
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>		
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>		
 				</span>
 			</li>
 			
 			<li>
 				<span class="ability-title">PHP</span>
 				<span class="ability-score">
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>	
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>	
 				</span>
 			</li>
 			
 			<li>
 				<span class="ability-title">XML</span>
 				<span class="ability-score">
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>		
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>		
 				</span>
 			</li>
 			
 			<li>
 				<span class="ability-title">Builder Pattern</span>
 				<span class="ability-score">
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>		
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>		
 				</span>
 			</li>
 			
 			<li>
 				<span class="ability-title">Command line Inteface</span>
 				<span class="ability-score">
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>			
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>			
 				</span>
 			</li>
 			
 			<li>
 				<span class="ability-title">JQuery</span>
 				<span class="ability-score">
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>	
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>	
 				</span>
 			</li>
 			
@@ -610,11 +609,11 @@
 			<li>
 				<span class="ability-title">Java</span>
 				<span class="ability-score">
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>		
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>		
 				</span>
 			</li>
 			
@@ -623,11 +622,11 @@
 			<li>
 				<span class="ability-title">Javascript</span>
 				<span class="ability-score">
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
 				</span>
 			</li>
 			
@@ -636,11 +635,11 @@
 			<li>
 				<span class="ability-title">LESS</span>
 				<span class="ability-score">
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>		
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>		
 				</span>
 			</li>
 			
@@ -649,11 +648,11 @@
 			<li>
 				<span class="ability-title">Laravel Framework</span>
 				<span class="ability-score">
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>				
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>				
 				</span>
 			</li>
 			
@@ -669,11 +668,11 @@
 			<li>
 				<span class="ability-title">MVC Pattern</span>
 				<span class="ability-score">
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>				
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>				
 				</span>
 			</li>
 			
@@ -682,11 +681,11 @@
 			<li>
 				<span class="ability-title">Method Factory Pattern</span>
 				<span class="ability-score">
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>	
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>	
 				</span>
 			</li>
 			
@@ -695,11 +694,11 @@
 			<li>
 				<span class="ability-title">Object Orientated Programming</span>
 				<span class="ability-score">
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>			
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>			
 				</span>
 			</li>
 			
@@ -708,11 +707,11 @@
 			<li>
 				<span class="ability-title">SASS / SCSS</span>
 				<span class="ability-score">
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>				
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>				
 				</span>
 			</li>
 			
@@ -721,11 +720,11 @@
 			<li>
 				<span class="ability-title">SEO</span>
 				<span class="ability-score">
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>			
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>			
 				</span>
 			</li>
 			
@@ -734,11 +733,11 @@
 			<li>
 				<span class="ability-title">Scrum</span>
 				<span class="ability-score">
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>			
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>			
 				</span>
 			</li>
 			
@@ -747,11 +746,11 @@
 			<li>
 				<span class="ability-title">Singleton Pattern</span>
 				<span class="ability-score">
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>				
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>				
 				</span>
 			</li>
 			
@@ -760,11 +759,11 @@
 			<li>
 				<span class="ability-title">UML</span>
 				<span class="ability-score">
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>			
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>			
 				</span>
 			</li>
 			
@@ -773,11 +772,11 @@
 			<li>
 				<span class="ability-title">Wordpress</span>
 				<span class="ability-score">
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>	
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>	
 				</span>
 			</li>
 			
@@ -786,11 +785,11 @@
 			<li>
 				<span class="ability-title">BEM</span>
 				<span class="ability-score">
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>			
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>			
 				</span>
 			</li>
 			
@@ -799,11 +798,11 @@
 			<li>
 				<span class="ability-title">AngularJS</span>
 				<span class="ability-score">
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>			
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>			
 				</span>
 			</li>
 			
@@ -812,11 +811,11 @@
 			<li>
 				<span class="ability-title">ElasticSearch</span>
 				<span class="ability-score">
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>			
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>			
 				</span>
 			</li>
 			
@@ -825,11 +824,11 @@
 			<li>
 				<span class="ability-title">Ruby</span>
 				<span class="ability-score">
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>
-					<img class="filled" src="{% static "index/svg/star.svg" %}" alt="Filled Star"/>			
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+					<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>			
 				</span>
 			</li>
 			
@@ -839,11 +838,6 @@
 	</div>
 	
 		
-</div>
-
-<div class="text-center project-referal">
-	<p>This project was forked from [http://www.pascalvangemert.nl] and modified from a PHP framework to Python.</p>
-	<a href="https://github.com/pascalvgemert/resume" class="btn btn-primary" target="_blank">See project on Github</a>
 </div>
 
 <hr />
@@ -1230,14 +1224,9 @@
 	<div class="col-md-6">
 		<ul class="no-bullets">
 			<li>
-				<a href="http://twitter.com/pascalvgemert" target="_blank">
-					<span class="icon icon-twitter"></span>
-					http://twitter.com/pascalvgemert				</a>
-			</li>
-			<li>
-				<a href="http://linkedin.nl/in/pascalvgemert/" target="_blank">
+				<a href="http://linkedin.com/in/matthewrr/" target="_blank">
 					<span class="icon icon-linkedin"></span>
-					http://linkedin.nl/in/pascalvgemert/				</a>
+					http://linkedin.com/in/matthewrr/				</a>
 			</li>
 		</ul>
 	</div>
@@ -1249,10 +1238,10 @@
 					pascalvgemert				</a>
 			</li>-->
 			<li>
-				<a href="mailto:ln.tremegnavlacsap@lacsap">
+				<a href="mailto:mrrivera@alumni.stanford.edu">
 					<span class="icon icon-email"></span>
 					<span style="unicode-bidi:bidi-override; direction: rtl;">
-						ln.tremegnavlacsap@lacsap					</span>
+						ude.drofnats.inmula@arevirrm					</span>
 				</a>
 			</li>
 		</ul>
@@ -1265,7 +1254,6 @@
 	<iframe id="twitter-widget-1" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" title="Twitter Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.c633b87376883931e7436b93bb46a699.en.html#_=1452458429192&amp;dnt=false&amp;id=twitter-widget-1&amp;lang=en&amp;original_referer=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3AcRExpd3vwGsJ%3Awww.pascalvangemert.nl%2F%2B%26cd%3D1%26hl%3Den%26ct%3Dclnk%26gl%3Dnl%26lr%3Dlang_nl%257Clang_en&amp;size=m&amp;text=Pascal%20van%20Gemert%20-%20Web%20Developer%20-%20Interactive%20Resume&amp;type=share&amp;url=http%3A%2F%2Fpascalvangemert.nl%2F%3Fref%3Dtwitter&amp;via=pascalvgemert" style="position: static; visibility: visible; width: 62px; height: 20px;" data-url="http://pascalvangemert.nl/?ref=twitter"></iframe>
 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
-	<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fpascalvangemert.nl%3Fref%3Dfacebook&amp;width=120&amp;height=21&amp;colorscheme=dark&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;send=false&amp;appId=143175172374579" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:120px; height:21px;" allowtransparency="true"></iframe>
 </div>			</div>
 		</div>
 		
@@ -1286,22 +1274,10 @@
 </div><!-- /.modal -->		
 		<!-- Bootstrap core JavaScript -->
 		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+		<script type="text/javascript" src="{% static 'index/js/jquery.min.js' %}"></script>
 		<script type="text/javascript" src="{% static 'index/js/script.js' %}"></script>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-		<!--<script type="text/javascript" src="/view/js/bootstrap.min.js"></script>-->
-		
-		<!-- Google Analytics -->
-		<script type="text/javascript">
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-3361587-8']);
-		  _gaq.push(['_trackPageview']);
-		
-		  (function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
-		</script>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	
 	</body>
 </html>

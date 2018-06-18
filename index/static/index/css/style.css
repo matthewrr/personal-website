@@ -1,10 +1,10 @@
 html, body { color: #434242; font-family: 'Open Sans', sans-serif !important; height: 100%; }
-body { background: #F3EFE0; font-size: 15px; line-height: 1.64; }
+body { background: #F3EFE0!important; font-size: 15px; line-height: 1.64; }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, strong, b { font-family: 'Open Sans', sans-serif !important; margin-bottom: 20px; }
-h1,h4 { font-weight: 700; margin-bottom: 10px; }
-h2,h3 { font-weight: 300; color: #22A39F; }
-h2 { font-size: 54px; text-align: center; }
+h1,h4 { font-weight: 700!important; margin-bottom: 10px; }
+h2,h3 { font-weight: 300!important; color: #22A39F!important; }
+h2 { font-size: 54px!important; text-align: center; }
 h3 { font-size: 28px; }
 h4 { font-size: 18px;}
 
@@ -42,8 +42,8 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale')";
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale');
 	
-	margin-bottom: 0px;
-	padding: 0px;
+	margin-bottom: 0px!important;
+	padding: 0px!important;
 }  
 /*.jumbotron:before { 
 	border: 1px solid #FFFFFF;
@@ -63,7 +63,7 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 .jumbotron .scroll-down { height: 80px; width: 110px; display: block; position: absolute; bottom: 0px; right: 5%; background-color: #222222; text-align: center; z-index: 6; }
 .jumbotron .scroll-down .glyphicon { 
 	color: #FFFFFF; 
-	font-size: 30px; 
+	width: 30px; 
 	padding-right: 2px; 
 	padding-top: 20px; 
 	
@@ -75,14 +75,14 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 }
 .jumbotron .scroll-down:hover .glyphicon { padding-top: 25px; }
 
-.navbar  { border: 0px; background-color: #222222; position: absolute; top: 100%; right: 5%; width: 110px; z-index: 999; }
+.navbar  { border: 0px!important; background-color: #222222!important; position: absolute; top: 100%; right: 5%; width: 110px; z-index: 999; }
 .navbar .navbar-collapse { padding: 0px; max-height: none; }
 .navbar .navbar-nav { float: none; }
 .navbar-nav { margin: 0px; }
 .navbar .nav > li { display: block; float: none; height: 80px; } 
-.navbar .nav > li a { display: block;  height: 80px; text-align: center; padding-top: 30px; font-weight: 600; color: #FFFFFF; }
+.navbar .nav > li a { display: block;  height: 80px; text-align: center; padding-top: 30px; font-weight: 600; color: #FFFFFF!important; }
 .navbar .nav > li a:hover, .navbar .nav > li a:focus { color: #999999; }
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus { background: #22A39F; color: #FFFFFF; }
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus { background: #22A39F!important; color: #FFFFFF!important; }
 .navbar-default .navbar-toggle:hover .icon-bar,
 .navbar-default .navbar-toggle:focus .icon-bar { background: #222222; }
 
@@ -369,34 +369,32 @@ figure.effect:hover p {
 	font-size: 42px;
 	padding-top: 6px;
 }
-.navbar {
-	position: absolute!important;
-}
-.navbar-default .navbar-toggle {
-    border-color: #ddd;
-}
-.navbar-toggle {
-    position: relative;
-    float: right;
-    padding: 9px 10px;
-    margin-top: 8px;
-    margin-right: 15px;
-    margin-bottom: 8px;
-    background-color: transparent;
-    background-image: none;
-    border: 1px solid transparent;
-    border-radius: 4px;
-}
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #888;
-}
-.navbar-toggle .icon-bar {
-    display: block;
-    width: 22px;
-    height: 2px;
-    border-radius: 1px;
-}
 
-.navbar-toggle .icon-bar+.icon-bar {
-    margin-top: 4px;
-}
+/*.navbar-default .navbar-toggle {*/
+/*    border-color: #ddd;*/
+/*}*/
+/*.navbar-toggle {*/
+/*    position: relative;*/
+/*    float: right;*/
+/*    padding: 9px 10px;*/
+/*    margin-top: 8px;*/
+/*    margin-right: 15px;*/
+/*    margin-bottom: 8px;*/
+/*    background-color: transparent;*/
+/*    background-image: none;*/
+/*    border: 1px solid transparent;*/
+/*    border-radius: 4px;*/
+/*}*/
+/*.navbar-default .navbar-toggle .icon-bar {*/
+/*    background-color: #888;*/
+/*}*/
+/*.navbar-toggle .icon-bar {*/
+/*    display: block;*/
+/*    width: 22px;*/
+/*    height: 2px;*/
+/*    border-radius: 1px;*/
+/*}*/
+
+/*.navbar-toggle .icon-bar+.icon-bar {*/
+/*    margin-top: 4px;*/
+/*}*/
