@@ -18,36 +18,23 @@
 			
 		<title>Matthew Rivera - Software Engineer</title>
 		<!-- Bootstrap core CSS -->
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
 		<!--<link href="/view/css/bootstrap.min.css" rel="stylesheet" />-->
 		<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">-->
 
+		
+		<link rel="stylesheet" type="text/css" href="{% static 'index/css/bootstrap.min.css' %}" />
 		<link rel="stylesheet" type="text/css" href="{% static 'index/css/style.css' %}" />
 		
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 		<link rel="icon" href="/favicon.ico" type="image/x-icon" />
-		
-		<!-- Begin Inspectlet Embed Code -->
-		<script type="text/javascript" id="inspectletjs">
-			window.__insp = window.__insp || [];
-			__insp.push(['wid', 92785244]);
-			(function() {
-				function __ldinsp(){var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://www.inspectlet.com/inspectlet.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); }
-				if (window.attachEvent){
-					window.attachEvent('onload', __ldinsp);
-				}else{
-					window.addEventListener('load', __ldinsp, false);
-				}
-			})();
-		</script>
-		<!-- End Inspectlet Embed Code -->
+
 		
 		
 		
 	</head>
 	
 	<body data-spy="scroll" data-target="#navbar-example">	 
-		<div class="opl"><a href="http://onepagelove.com/pascal-van-gemert" target="_blank">pascalvangemert.nl featured on One Page Love</a></div>	
 		<div id="top" class="jumbotron" data-src="/view/images/metro_animation.gif" data-position="center right">
 			<div class="container">
 				<h1>Matthew R. Rivera</h1>
@@ -73,11 +60,11 @@
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse navbar-ex1-collapse">
+			<div class="navbar-collapse navbar-ex1-collapse collapse">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="#profile">Profile</a></li>
-					<li><a href="#experiences">Experiences</a></li>
-					<li><a href="#abilities">Abilities</a></li>
+					<li class="active"><a class="nav-link" href="#profile">Profile</a></li>
+					<li><a class="nav-link" href="#experiences">Experiences</a></li>
+					<li><a class="nav-link" href="#abilities">Abilities</a></li>
 										<li><a href="#projects">Projects</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
@@ -842,45 +829,6 @@
 
 <hr />
 
-<h3>Languages</h3>
-
-<div class="row">
-
-		
-	<div class="col-md-6">
-		<ul class="no-bullets">
-		
-				
-			<li>
-				<span class="ability-title">English (Native)</span>
-				<span class="ability-score">
-				
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-								
-					<span class="glyphicon glyphicon-star filled"></span>
-					
-									
-				</span>
-			</li>
-		</ul>
-	</div>
-	
-		
-</div>
-
-<hr />
-
 <h3>Tools</h3>
 
 <div class="row">
@@ -1204,7 +1152,7 @@
 
 	<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
 	<link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css" />
-	<div class="calendar">Loading the data just for you.</div>
+	<div class="calendar" style="display:none;">Loading the data just for you.</div>
 	<script>
 	    GitHubCalendar(".calendar", "matthewrr");
 	</script>
@@ -1277,7 +1225,9 @@
 		<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
 		<script type="text/javascript" src="{% static 'index/js/jquery.min.js' %}"></script>
 		<script type="text/javascript" src="{% static 'index/js/script.js' %}"></script>
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<script type="text/javascript" src="{% static 'index/js/bootstrap.min.js' %}"></script>
+		<!--<link rel="stylesheet" src="{% static 'index/css/bootstrap.css' %}"></link>-->
+		<!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">-->
 	
 	</body>
 </html>
