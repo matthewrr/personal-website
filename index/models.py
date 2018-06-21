@@ -30,6 +30,6 @@ class Experience(models.Model):
 #     description = models.TextField()
     
 class Abilities(models.Model):
-    ABILITIES_CATEGORIES = (('skills','Skills'), ('tools','Tools'))
+    ABILITIES_CATEGORIES = (('skills','Skills'),('tools','Tools'))
     category = models.CharField(max_length=1, choices=ABILITIES_CATEGORIES)
     skill_level = models.IntegerField()
