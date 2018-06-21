@@ -1,114 +1,32 @@
 {% load staticfiles %}
 <!--<h3>Careers</h3>-->
 <div class="background-white">
-		<div id="experiences" class="container">
-			<h2>Experience</h2>
-
-<hr />
-
-
-<div class="experiences">
-
-					
-	<div class="experience row">
-		<div class="col-md-4">
-			<h4>Centerplate, Inc.</h4>
-			<p class="experience-period">
-				May 2016				- 
-				current			</p>
-		</div>
-		<div class="col-md-8">
-			<p>
-				<strong>App Developer / Bartender</strong>
-				<span class="hidden-phone">
-					Working as a Senior Devloper on a large european based webshop for digital games and gifrcards. The application is Laravel based and as a team we are working in a fully scrum way. . 				</span>
-				<span class="experience-details">
-					<span class="location">
-						<img src="{% static "index/img/location.svg" %}" alt="Map Marker"/>
-						Spokane, WA					</span>
-				</span>
-			</p>
-		</div>
-	</div>
-	
-					
-	<div class="experience row">
-		<div class="col-md-4">
-			<h4>Thunder Industries</h4>
-			<p class="experience-period">
-				Aug 2015				- 
-				Apr 2016			</p>
-		</div>
-		<div class="col-md-8">
-			<p>
-				<strong>Project Analyst</strong>
-				<span class="hidden-phone">
-					As a senior at The Secret Lab I work on projects like Kaartjes.nl, Clay.com and more. Using frameworks and technologies such as Laravel, Wordpress, Drupal 8 and ElasticSearch. I also introduced working with Git Flow and supporting my colleagues to write nice readable and reusable code. 				</span>
-				<span class="experience-details">
-					<span class="location">
-						<img src="{% static "index/img/location.svg" %}" alt="Map Marker"/>
-						San Francisco, CA					</span>
-				</span>
-			</p>
+	<div id="experiences" class="container">
+		<h2>Experience</h2>
+		<hr />
+		<div class="experiences">
+		{% for experience in experiences %}
+			<div class="experience row">
+				<div class="col-md-4">
+					<h4>{{experience.company}}</h4>
+					<p class="experience-period">
+						{{experience.start_date|date:"M Y"}} - {{experience.end_date|date:"M Y"}}
+					</p>
+				</div>
+				<div class="col-md-8">
+					<p>
+						<strong>{{experience.title}}</strong>
+						<span class="hidden-phone">{{experience.description}}</span>
+						<span class="experience-details">
+							<span class="location">
+								<img src="{% static "index/img/location.svg" %}" alt="Map Marker"/>
+								{{experience.location}}
+							</span>
+						</span>
+					</p>
+				</div>
+			</div>
+		{% endfor %}
 		</div>
 	</div>
-	
-					
-	<div class="experience row">
-		<div class="col-md-4">
-			<h4>Caviar Digital</h4>
-			<p class="experience-period">
-				Feb 2015				- 
-				Jul 2015			</p>
-		</div>
-		<div class="col-md-8">
-			<p>
-				<strong>Fulltime - Creative Developer</strong>
-				<span class="hidden-phone">
-					Caviar Digital is a digital agency based in Amsterdam. I worked here as a creative developer on a big project for the new Samsung Galaxy S6 / S6 edge and created a configurable CMS based on the Laravel Framework. Due to economically reasons it was a short but good experience.				</span>
-				<span class="experience-details">
-					<span class="location">
-						<img src="{% static "index/img/location.svg" %}" alt="Map Marker"/>
-						Amsterdam					</span>
-					
-										
-					<span class="seperator">|</span>
-					<span class="link">
-						<span class="glyphicon glyphicon-link"></span>
-						<a href="http://digital.caviarcontent.com/" target="_blank">http://digital.caviarcontent.com/</a>
-					</span>
-					
-										
-				</span>
-			</p>
-		</div>
-	</div>
-
-	<div class="experience row">
-		<div class="col-md-4">
-			<h4>C2K internet solutions</h4>
-			<p class="experience-period">
-				Sep 2008				- 
-				Mar 2011			</p>
-		</div>
-		<div class="col-md-8">
-			<p>
-				<strong>Fulltime - Lead Developer</strong>
-				<span class="hidden-phone">
-					Right after I graduated, I started working for C2K: a full service internet agency. I developed a homemade CMS, CRM and e-mail marketing system. The CMS was used for a dozens of clients, as well as the e-mail marketing system. I also did a lot of custom made web sites/applications. Later on I also developed Layars like: Conquar (a digital adaption of the board game of Risk) and Gowalla (based on Gowalla's API). C2K no longer exists.				</span>
-				<span class="experience-details">
-					<span class="location">
-						<img src="{% static "index/img/location.svg" %}" alt="Map Marker"/>
-						Eindhoven / 's-Hertogenbosch					</span>
-					
-										
-				</span>
-			</p>
-		</div>
-	</div>
-	
-	
 </div>
-</div>
-	
-		</div>

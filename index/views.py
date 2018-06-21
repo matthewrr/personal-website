@@ -1,6 +1,12 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import *
 
 def index(request):
-    blank_stuff = []
-    return render(request, 'index.html', {'blank_stuff': blank_stuff})
+    context = {
+        'abilities':Abilities.objects.all(),
+        'education':Education.objects.all(),
+        'experiences':Experience.objects.all(),
+        'profile':Profile.objects.all()[0]
+    }
+    return render(request, 'index.html', context)
