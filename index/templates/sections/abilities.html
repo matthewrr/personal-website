@@ -3,52 +3,28 @@
 	<div id="abilities" class="container">
 		<h2>Abilities</h2>
 		<hr />
-		<h3>Skills</h3>
+		{% for category,abilities in all_abilities.items %}
+		<h3>{{category|capfirst}}</h3>
 		<div class="row">
 			<div class="col-md-6">
 				<ul class="no-bullets">
 					{% for ability in abilities %}
-						{% if ability.category == 'skills' %}
-							<li>
-								<span class="ability-title">{{ ability.description }}</span>
-								<span class="ability-score">
-									{% for i in '12345' %}
-										{% if forloop.counter <= ability.skill_level %}
-											<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
-										{% else %}
-											<img class="filled" src="{% static "index/img/empty-star.svg" %}" alt="Unfilled Star"/>
-										{% endif %}
-									{% endfor %}
-								</span>
-							</li>
-						{% endif %}
+						<li>
+							<span class="ability-title">{{ability.description}}</span>
+							<span class="ability-score">
+								{% for i in '12345' %}
+									{% if forloop.counter <= ability.skill_level %}
+										<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
+									{% else %}
+										<img class="filled" src="{% static "index/img/empty-star.svg" %}" alt="Unfilled Star"/>
+									{% endif %}
+								{% endfor %}
+							</span>
+						</li>
 					{% endfor %}
 				</ul>
 			</div>
 		</div>
-		<h3>Tools</h3>
-		<div class="row">
-			<div class="col-md-6">
-				<ul class="no-bullets">
-					{% for ability in abilities %}
-						{% if ability.category == 'tools' %}
-							<li>
-								<span class="ability-title">{{ ability.description }}</span>
-								<span class="ability-score">
-									{% for i in '12345' %}
-										{% if forloop.counter <= ability.skill_level %}
-											<img class="filled" src="{% static "index/img/star.svg" %}" alt="Filled Star"/>
-										{% else %}
-											<img class="filled" src="{% static "index/img/empty-star.svg" %}" alt="Unfilled Star"/>
-										{% endif %}
-									{% endfor %}
-								</span>
-							</li>
-						{% endif %}
-					{% endfor %}
-				</ul>
-			</div>
-		</div>
-		<hr />
+		{% endfor %}
 	</div>
 </div>
