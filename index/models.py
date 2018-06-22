@@ -3,7 +3,7 @@ from django.db import models
 class Profile(models.Model):
     name = models.CharField(max_length=256)
     subtitle = models.CharField(max_length=256)
-    # image = models.ImageField()
+    headshot = models.ImageField(upload_to='index/img/',default='index/img/star.svg')
     description = models.TextField()
     location = models.CharField(max_length=256)
     email = models.EmailField()
@@ -51,10 +51,10 @@ class Experience(models.Model):
     def __str__(self):
         return self.company
     
-# class Projects(models.Model):
-#     image = models.ImageField()
-#     title = models.CharField(max_length=256)
-#     description = models.TextField()
+class Projects(models.Model):
+    project_image = models.ImageField(upload_to='index/img/',default='index/img/star.svg')
+    title = models.CharField(max_length=256)
+    description = models.TextField()
     
 class Abilities(models.Model):
     ABILITIES_CATEGORIES = (('skills','Skills'),('tools','Tools'))
