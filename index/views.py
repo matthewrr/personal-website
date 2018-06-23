@@ -13,8 +13,8 @@ def index(request):
     }
     context = {
         'all_abilities':abilities,
-        'education':Education.objects.order_by('start_date'),
-        'experiences':Experience.objects.order_by('start_date'),
+        'education':Education.objects.order_by('start_date').reverse(),
+        'experiences':Experience.objects.order_by('start_date').reverse(),
         'profile':Profile.objects.all()[0],
         'all_projects': projects,
     }
