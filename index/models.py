@@ -6,6 +6,7 @@ class Profile(models.Model):
     headshot = models.ImageField(upload_to='index/img/',default='index/img/star.svg')
     description = models.TextField()
     location = models.CharField(max_length=256)
+    resume = models.FileField(upload_to='index/files/resume/')
     email = models.EmailField()
     linkedin = models.URLField()
     
