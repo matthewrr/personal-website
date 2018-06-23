@@ -10,8 +10,11 @@ class ExperienceAdmin(admin.ModelAdmin):
     list_display = ('company', 'title', 'dates', 'display')
 class ProfileAdmin(admin.ModelAdmin):
     list_display = ('name', 'location', 'email')
+class ProjectsAdmin(admin.ModelAdmin):
+    list_display = ('title', 'category')
 
 admin.site.register(Abilities, AbilitiesAdmin)    
 admin.site.register(Education, EducationAdmin)
 admin.site.register(Experience, ExperienceAdmin)
 admin.site.register(Profile, ProfileAdmin)
+admin.site.register(Projects, ProjectsAdmin)

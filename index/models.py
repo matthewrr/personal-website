@@ -52,9 +52,18 @@ class Experience(models.Model):
         return self.company
     
 class Projects(models.Model):
+    PROJECTS_CATEGORIES = (('coding', 'Coding'),('design','Design'))
     project_image = models.ImageField(upload_to='index/img/',default='index/img/star.svg')
     title = models.CharField(max_length=256)
     description = models.TextField()
+    link = models.URLField()
+    category = models.CharField(max_length=256, choices=PROJECTS_CATEGORIES)
+    
+    class Meta:
+        verbose_name_plural = "projects"
+    
+    def __str__(self):
+        return self.title
     
 class Abilities(models.Model):
     ABILITIES_CATEGORIES = (('skills','Skills'),('tools','Tools'))
